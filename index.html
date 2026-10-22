@@ -383,7 +383,7 @@
         </div>
 
         <div class="rules" style="margin-top:15px;">
-            <li>📝 <strong id="totalInfo">42 soal</strong> (2 sesi × 21 soal)</li>
+            <li>📝 <strong id="totalInfo">42 soal</strong> (2 sesi × 25 soal)</li>
             <li>🈶 <strong>Sesi 1:</strong> Kanji → Hiragana</li>
             <li>🔁 <strong>Sesi 2:</strong> Hiragana → Kanji</li>
             <li>⏱️ <strong>10 detik</strong> per soal</li>
@@ -445,8 +445,8 @@
             <div>📊 Nilai: <strong id="statNilai">0</strong></div>
         </div>
         <div style="display:flex;justify-content:center;gap:15px;margin:10px 0;font-size:13px;color:#555;flex-wrap:wrap;">
-            <span>Sesi 1: <strong id="score1">0</strong>/21</span>
-            <span>Sesi 2: <strong id="score2">0</strong>/21</span>
+            <span>Sesi 1: <strong id="score1">0</strong>/25</span>
+            <span>Sesi 2: <strong id="score2">0</strong>/25</span>
         </div>
 
         <div class="kunci-section">
@@ -465,8 +465,12 @@
 // ===== DATA =====
 // Tanpa furigana (hiragana dalam kurung)
 const DATA = [
-    { kanji: "旅館", hiragana: "りょかん" },
+    { kanji: "旅館", hiragana: "りょかん" },  
+    { kanji: "幸せ", hiragana: "しあわせ" },
+    { kanji: "耳", hiragana: "みみ" },  
     { kanji: "年", hiragana: "ねん" },
+    { kanji: "写真", hiragana: "しゃしん" },
+    { kanji: "紹介します", hiragana: "しょうかいします" },
     { kanji: "有名", hiragana: "ゆうめい" },
     { kanji: "牛乳", hiragana: "ぎゅうにゅう" },
     { kanji: "円", hiragana: "えん" },
@@ -488,9 +492,9 @@ const DATA = [
     { kanji: "季節", hiragana: "きせつ" }
 ];
 
-const SESI1_COUNT = DATA.length;        // 21
-const SESI2_COUNT = DATA.length;        // 21
-const TOTAL = SESI1_COUNT + SESI2_COUNT; // 42
+const SESI1_COUNT = DATA.length;        // 25
+const SESI2_COUNT = DATA.length;        // 25
+const TOTAL = SESI1_COUNT + SESI2_COUNT; // 50
 const TIME_PER_QUESTION = 10;
 const STORAGE_KEY = 'kuis_kanji_bolakbalik_progress';
 const STORAGE_IDENTITAS = 'kuis_kanji_bolakbalik_identitas';
